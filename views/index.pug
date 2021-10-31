@@ -1,0 +1,10 @@
+extends layout
+
+mixin list-ord
+ ol 
+  each val in courses
+   li= val.name
+
+block content
+  h1 Courses 
+  +list-ord
